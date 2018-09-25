@@ -9,6 +9,16 @@
     http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
 
-        <rabbit:listener-container
+    <rabbit:connection-factory id="connectionFactory" host="${rabbitmq.host}" port="${rabbitmq.port}"
+                               virtual-host="${rabbitmq.vhost}" username="${rabbitmq.username}" password="${rabbitmq.password}" />
+
+    <!-- 定义管理 -->
+    <rabbit:admin connection-factory="connectionFactory" />
+
+    <!-- 定义交换机 -->
+    <rabbit:topic-exchange name="taotao-item-exchange" durable="true" auto-declare="true" />
+
+    <!-- 定义模板 -->
+    <rabbit:template id="template" connection-factory="connectionFactory" exchange="taotao-item-exchange" />
 
 </beans>
