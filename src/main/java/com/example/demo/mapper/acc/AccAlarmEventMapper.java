@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface AccAlarmEventMapper {
-    // test GitHub connect 222
+    // test GitHub connect 222 wk
     long countByExample(AccAlarmEventCriteria example);
 
     int deleteByExample(AccAlarmEventCriteria example);
