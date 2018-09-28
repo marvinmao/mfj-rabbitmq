@@ -1,10 +1,12 @@
 package com.example.demo.model.acc;
 
+import com.example.demo.base.BaseExample;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class AccAlarmEventCriteria {
+public class AccAlarmEventCriteria extends BaseExample {
     protected String orderByClause;
 
     protected boolean distinct;

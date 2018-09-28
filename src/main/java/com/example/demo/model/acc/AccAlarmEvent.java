@@ -1,9 +1,10 @@
 package com.example.demo.model.acc;
 
-import java.io.Serializable;
+import com.example.demo.base.BaseEntity;
+
 import java.util.Date;
 
-public class AccAlarmEvent implements Serializable {
+public class AccAlarmEvent extends BaseEntity {
     private String uuid;
 
     private Date createTime;
