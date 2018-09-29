@@ -20,12 +20,14 @@
             <property name="suppressAllComments" value="true" />
         </commentGenerator>
 
+        <!-- mysql -->
         <!-- 数据库链接URL、用户名、密码 -->
         <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver"-->
                         <!--connectionURL="jdbc:mysql://192.168.73.135:3306/battcn"-->
                         <!--userId="root"-->
                         <!--password="root">-->
         <!--</jdbcConnection>-->
+        <!-- postgresql -->
         <jdbcConnection driverClass="org.postgresql.Driver"
                         connectionURL="jdbc:postgresql://192.168.2.249:5432/hdsc_db"
                         userId="postgres"
